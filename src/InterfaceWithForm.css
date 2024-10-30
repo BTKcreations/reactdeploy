@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  /* padding: 1rem; */
+}
+
+/* Main container */
+.interface-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #acacac;
+    >.heading {
+      /* color: whitesmoke; */
+      /* letter-spacing: 0.3rem; */
+      display: none;
+    }
+  }
+  
+  /* Interface div with 90% height and width for large screens */
+  .interface {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    border: 1px solid #ddd;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 1rem;
+    transition: height 0.3s ease;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(6px);
+    background-color: #fffefe;
+    padding: 1rem;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  
+  /* When form is submitted, right block appears */
+  .submitted {
+    flex-direction: row;
+  }
+  
+  .left-block {
+    width: 35%;
+    height: 100%;
+    padding: 1.5rem;
+    /* border-right: 1px solid #ddd; */
+    background-color: #abdde0;
+    border-radius: 0.5rem;
+  }
+  
+  /* Form styling */
+  .left-block form {
+    /* background-color: rgba(79, 117, 88, 0.5); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border-radius: .5rem; */
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(6px);
+  }
+  
+  .form-heading-container {
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+  }
+  
+  .form-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .input-container div {
+    margin-bottom: 15px; /* Add margin for each input container */
+  }
+  
+  label {
+    font-size: 1.2rem; /* Font size for labels */
+    font-weight: 500;
+    margin-bottom: 5px; /* Space between label and input */
+    display: block; /* Make the label a block element */
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.4rem;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .button-container .submit-btn {
+    width: 50%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  
+  /* Right block (sub-options) */
+  .right-block {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .submitted .right-block {
+    opacity: 1;
+  }
+  
+  .sub-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border-left: 1px solid #ddd; */
+    padding: 20px;
+  }
+  
+  .sub-block .heading {
+    /* border: 1px solid black; */
+    border-radius: 0.5rem;
+    width:80%;
+    padding:10px;
+    text-align: center;
+    background-color: #3496ff;
+  }
+  
+  /* Add this styling for the "Back to Form" button */
+  .right-block .back-button {
+    stroke: #0056b3;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    transition: color 0.3s ease;
+    display: none;
+  }
+  .back-button:hover {
+    color: #007bff; /* Text color on hover (change to desired color) */
+  }
+  
+  
+  .back-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    stroke: #d4d4d4; /* Icon color for normal state */
+    transition: stroke 0.3s ease; /* Smooth transition for icon color change */
+  }
+  .back-button:hover .back-icon {
+    stroke: #007bff; /* Icon color on hover (change to desired color) */
+  }
+
+  .document{
+    /* border: 1px solid rgb(173, 173, 224); */
+    background-color: azure;
+    /* white-space: initial; */
+    /* word-wrap: break-word; */
+    padding: 10px;
+    width: 80%;
+    font-size: 130%;
+    border-radius: 1rem;
+    >h2 {
+      background-color: #a7c9ec;
+      border-radius: 0.5rem;
+      text-align: center;
+      padding: 10px 0;
+    }
+    >p{
+      background-color: #d8e4f0;
+      border-radius: 1rem;
+      line-height: 2.8rem;
+      line-break: auto;
+      padding: 1rem;
+    }
+  }
+
+  .right-block .pdf-btn-container {
+    text-align: right;
+    /* width: 80%; */
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    .pdf-btn {
+      padding: 10px;
+      border-radius: 0.2rem;
+      
+    }
+  }
+  
+  
+  /* Responsive styling for mobile */
+  @media (max-width: 820px) {
+    .interface {
+      flex-direction: column;
+      width: 98%;
+      height: 98%;
+    }
+    input,select{
+      width: 90%;
+    }
+  
+    .left-block {
+      width: 100%;
+      border-right: none;
+    }
+    form{
+      background-color: rgba(79, 117, 88, 0);
+    }
+  
+    .right-block {
+      width: 100%;
+      flex-direction: column;
+      display: none; /* Initially hide the right block */
+    }
+  
+    /* When form is submitted, show right block and hide left block */
+    .submitted .right-block {
+      display: flex;
+    }
+  
+    .submitted .left-block {
+      display: none;
+    }
+  
+    .right-block .back-button {
+      display: inline-block; /* Show button only on screens with max width 768px (mobile devices) */
+    }
+    .document{
+      width: 100%;
+    }
+  }
+  

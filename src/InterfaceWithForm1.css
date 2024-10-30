@@ -1,0 +1,140 @@
+.interface-container {  
+    background-color: #f9f9f9;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  }
+  form {  
+    background-color: #ffffff;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  }  
+    
+  .form-heading-container {  
+    background-color: #3498db;  
+    color: #ffffff;  
+    padding: 10px;  
+    border-radius: 10px 10px 0 0;  
+  }  
+    
+  .form-heading {  
+    font-size: 18px;  
+    font-weight: bold;  
+    margin-bottom: 10px;  
+  }  
+    
+  .input-container {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+  }  
+    
+  input[type="text"],  
+  input[type="number"],  
+  input[type="email"] {  
+    width: 100%;  
+    padding: 10px;  
+    margin-bottom: 20px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+  }  
+    
+  label {  
+    display: block;  
+    margin-bottom: 10px;  
+  }  
+    
+  select {  
+    width: 100%;  
+    padding: 10px;  
+    margin-bottom: 20px;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+  }
+  .submit-btn {  
+    background-color: #3498db;  
+    color: #ffffff;  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+  }  
+    
+  .submit-btn:hover {  
+    background-color: #2ecc71;  
+  }
+  .right-block {  
+    background-color: #f9f9f9;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  }  
+    
+  .sub-block {  
+    background-color: #ffffff;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  }  
+    
+  .heading {  
+    font-size: 18px;  
+    font-weight: bold;  
+    margin-bottom: 10px;  
+  }  
+    
+  .document {  
+    padding: 20px;  
+  }  
+    
+  .pdf-btn-container {  
+    text-align: center;  
+    margin-top: 20px;  
+  }  
+    
+  .pdf-btn {  
+    background-color: #3498db;  
+    color: #ffffff;  
+    padding: 10px 20px;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+  }  
+    
+  .pdf-btn:hover {  
+    background-color: #2ecc71;  
+  }
+  .markdown {  
+    font-size: 16px;  
+    line-height: 1.5;  
+    padding: 20px;  
+  }  
+    
+  .markdown h1,  
+  .markdown h2,  
+  .markdown h3 {  
+    font-weight: bold;  
+    margin-bottom: 10px;  
+  }  
+    
+  .markdown p {  
+    margin-bottom: 20px;  
+  }  
+    
+  .markdown ul,  
+  .markdown ol {  
+    list-style: disc;  
+    padding: 0 20px;  
+  }  
+    
+  .markdown li {  
+    margin-bottom: 10px;  
+  }  
+    
+  .markdown code {  
+    background-color: #f9f9f9;  
+    padding: 5px;  
+    border-radius: 5px;  
+  }
+  
