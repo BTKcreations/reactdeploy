@@ -23,7 +23,7 @@ const InterfaceWithForm = () => {
     };
 
     try {
-      const response = await fetch('https://interface-with-form-backend-5fne42x3q.vercel.app/', {
+      const response = await fetch('https://interface-with-form-backend-5fne42x3q.vercel.app/form', {
         method: 'POST',
         headers:{
           'Content-Type': 'application/json',
